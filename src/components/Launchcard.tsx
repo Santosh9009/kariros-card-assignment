@@ -13,6 +13,7 @@ import SniperIcon from "../../public/sniper-rifle 1.svg";
 import chart from "../../public/Chart Container.svg";
 import clock from "../../public/Clock.svg";
 import capsuel from "../../public/capsule.svg";
+import profile2 from '../../public/ProfileMan.png'
 
 export default function LaunchCard() {
   return (
@@ -40,9 +41,8 @@ export default function LaunchCard() {
               </div>
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-1">
-                  <h3 className="text-base font-semibold">$XLIFE</h3>
-                
-                  <p className="text-base text-gray-400">X Life Token</p>
+                  <h3 className="text-sm font-semibold">$XLIFE</h3>
+                  <p className="text-sm text-gray-400">X Life Token</p>
                   <Image
                     src={copyIcon}
                     alt="Copy"
@@ -60,20 +60,20 @@ export default function LaunchCard() {
                       height={14}
                       className="cursor-pointer"
                     />
-                    <p className="text-xs text-gray-400">2m</p>
+                    <p className="text-[10px] text-gray-400">2m</p>
                   </div>
                   <div className="flex items-center gap-3 ml-3">
-                    <p className="text-xs">
+                    <p className="text-[10px]">
                       VOL <span className="text-gray-300">$52K</span>
                     </p>
-                    <p className="text-xs">
+                    <p className="text-[10px]">
                       MC <span className="text-gray-300">$82K</span>
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center justify-start gap-2">
-                  <p className="text-sm font-normal">$0.00002654</p>
-                  <p className="text-green-400 text-xs">+123.5%</p>
+                  <p className="text-xs font-normal">$0.00002654</p>
+                  <p className="text-green-400 text-[10px]">+123.5%</p>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function LaunchCard() {
               </div>
             </div>
 
-            <button className="bg-purple-600 hover:bg-purple-700 w-24 py-0.5 px-2 rounded text-white text-sm font-medium flex items-center justify-center gap-1.5 ml-2">
+            <button className="bg-purple-600 hover:bg-purple-700 w-24 py-0.5 px-2 rounded text-white text-xs font-medium flex items-center justify-center gap-1.5 ml-2">
               Snipe
               <Image src={SniperIcon} alt="Sniper" width={16} height={16} />
             </button>

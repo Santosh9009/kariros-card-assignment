@@ -1,4 +1,5 @@
 export interface TwitterCardProps {
+  id: string;  // Add this line
   profile: {
     name: string;
     handle: string;
@@ -18,8 +19,11 @@ export interface TwitterCardProps {
   metrics: {
     comments: number;
     retweets: number;
-    likes: string | number;
+    likes: string;
     influenceScore: number;
   };
   textColor?: string;
+  onClick: (id:string) => void;
+  isSelected?: boolean;
+  selectedCardId:string;
 }
