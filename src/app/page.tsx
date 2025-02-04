@@ -4,6 +4,7 @@ import SocialScanner from "@/components/SocialScanner";
 import Image from "next/image";
 import LaunchFeed from "@/components/LaunchFeed";
 import TwitterCard from "../components/card";
+import Btn from "@/components/Btn";
 
 export default function Home() {
   const [isLaunchFeedOpen, setIsLaunchFeedOpen] = useState(false);
@@ -26,8 +27,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-4 bg-[#1A1B2E]">
-      <div className="flex gap-5">
+    <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-24 gap-4 bg-[#1A1B2E]">
+      <div className="flex flex-col lg:flex-row gap-5">
         <SocialScanner onCardClick={handleOpen} selectedCardId={selectedCardId || ''} />
         <LaunchFeed onClose={handleClose} isOpen={isLaunchFeedOpen} />
       </div>
