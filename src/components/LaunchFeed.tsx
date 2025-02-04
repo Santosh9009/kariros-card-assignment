@@ -34,7 +34,7 @@ const LaunchFeed: React.FC<LauchFeedProps> = ({ onClose, isOpen }) => {
       ${!isOpen ? 'opacity-0 translate-x-4 hidden' : 'opacity-100 translate-x-0'}
       ${isClosing ? 'opacity-0 translate-x-4' : ''}`}>
       <div className="flex items-center justify-between">
-        <h1 className="text-sm font-bold mb-6 py-2 border-b border-white/10">Launchpad</h1>
+        <h1 className="text-sm font-bold mb-6 py-2 border-b border-white/10 w-full">Launchpad</h1>
         <button 
           onClick={handleClose}  
           className="text-white/60 hover:text-white"

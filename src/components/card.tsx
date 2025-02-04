@@ -23,29 +23,29 @@ const TwitterCard = ({ id, profile, tweet, tags, metrics, textColor, onClick, se
               <Image
                 src={profile.image}
                 alt="Profile"
-                width={24}  // reduced from 30
-                height={24} // reduced from 30
+                width={24}
+                height={24}
                 className="rounded-full"
               />
-              <div className="h-[36px] flex flex-col justify-center"> // reduced from 40px
+              <div className="h-[36px] flex flex-col justify-center"> 
                 <div className="flex items-center gap-3">
-                  <span className="font-semibold text-xs">{profile.name}</span> // changed from text-sm
+                  <span className="font-semibold text-xs">{profile.name}</span> 
                   {profile.verified && (
-                    <Image src={bluetick} alt="Verified" width={14} height={14} /> // reduced from 16
+                    <Image src={bluetick} alt="Verified" width={14} height={14} /> 
                   )}
                   {profile.list && (
-                    <span className="text-[10px] text-gray-400"> // changed from text-xs
+                    <span className="text-[10px] text-gray-400"> 
                       List: {profile.list}
                     </span>
                   )}
                 </div>
-                <span className="text-gray-400 text-xs">{profile.handle}</span> // changed from text-sm
+                <span className="text-gray-400 text-xs">{profile.handle}</span>
               </div>
             </div>
-            <span className="text-gray-400 text-[10px]">{tweet.timestamp}</span> // changed from text-xs
+            <span className="text-gray-400 text-[10px]">{tweet.timestamp}</span>
           </div>
           
-          <p className={`text-xs ${textColor || 'text-gray-300'}`}>{tweet.content}</p> // changed from text-sm
+          <p className={`text-xs ${textColor || 'text-gray-300'}`}>{tweet.content}</p>
           
           {tweet.image && (
             <div className="rounded-lg overflow-hidden">
@@ -66,17 +66,17 @@ const TwitterCard = ({ id, profile, tweet, tags, metrics, textColor, onClick, se
               </GradientButton>
             ))}
           </div>
-          <div className="mt-3 flex items-center justify-between text-gray-400 text-xs"> // changed from text-sm
+          <div className="mt-3 flex items-center justify-between text-gray-400 text-xs">
             <div className="flex items-center gap-2 cursor-pointer hover:text-blue-400">
-              <Image src={commment} alt="Comment" width={14} height={14} /> // reduced from 16
+              <Image src={commment} alt="Comment" width={14} height={14} />
               <span className="text-white">{metrics.comments}</span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-green-400">
-              <Image src={retweet} alt="Retweet" width={14} height={14} /> // reduced from 16
+              <Image src={retweet} alt="Retweet" width={14} height={14} />
               <span className="text-white">{metrics.retweets}</span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-red-400">
-              <Image src={heart} alt="Heart" width={14} height={14} /> // reduced from 16
+              <Image src={heart} alt="Heart" width={14} height={14} />
               <span className="text-white">{metrics.likes}</span>
             </div>
             <div className="flex items-center gap-2 cursor-pointer hover:text-gray-300">

@@ -122,6 +122,7 @@ const SocialScanner = ({
         onClick={onCardClick}
         selectedCardId={selectedCardId}
       />
+      <div className="mb-3"></div>
       <TwitterCard
         {...cardData2}
         textColor="text-red-500"
